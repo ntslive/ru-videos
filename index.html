@@ -50,26 +50,33 @@
 </head>
 
 <body>
-    <div id="ru-video">
+    <div class="ru-live-video">
         <div
             style="background-image: url('public/images/ru-video-page-bg-landscape.png');"
-            class="ru-video-bg-image"
+            class="page-bg-image"
         ></div>
 
-        <div class="ru-video-bg-overlay"></div>
+        <div class="page-bg-overlay"></div>
 
-        <main class="ru-video-main">
-            <div id="youtube-stream">
-                <div id="youtube-container">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL7cpdOw8ERGCIBtwGB1d7fp2aunrPOrrQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <main class="main">
+            <div class="wrapper">
+                <div class="container">
+                    <div class="video-wrapper">
+                        <iframe
+                            src="https://www.youtube.com/embed/videoseries?list=PL7cpdOw8ERGCIBtwGB1d7fp2aunrPOrrQ"
+                            frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen
+                        ></iframe>
+                    </div>
+
+                    <div>
+                        <p>
+                            24hrs of music & mayhem, featuring 
+                            erat a ante venenatis dapibus posuere velit aliquet.
+                        </p>
+                    </div>
                 </div>
-            </div>
-
-            <div>
-                <p>
-                    24hrs of music & mayhem, featuring 
-                    erat a ante venenatis dapibus posuere velit aliquet.
-                </p>
             </div>
         </main>
     </div>

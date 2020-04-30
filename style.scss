@@ -123,9 +123,12 @@ p {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+    }
+
+    .image-wrapper {
+        max-width: 94px;
 
         img {
-            max-width: 94px;
             width: 100%;
         }
     }

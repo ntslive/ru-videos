@@ -86,8 +86,9 @@ p {
   display: flex;
   flex-wrap: wrap;
   justify-content: center; }
-  .ru-live-video .partners img {
-    max-width: 94px;
+.ru-live-video .image-wrapper {
+  max-width: 94px; }
+  .ru-live-video .image-wrapper img {
     width: 100%; }
 @media only screen and (min-width: 768px) {
   .ru-live-video .wrapper {

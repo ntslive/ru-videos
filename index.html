@@ -47,13 +47,30 @@
         // TODO - track custom events
     </script>
 
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.0/lazysizes.min.js"
+        type="text/javascript"
+    ></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.0/plugins/bgset/ls.bgset.min.js"
+        type="text/javascript"
+    ></script>
+
+    <!-- <script src="https://ntslive.github.io/afx/public/js/prod.js?t=1496675932" type="text/javascript"></script> -->
+    <script src="client.js" type="text/javascript" defer></script>
 </head>
 
 <body>
     <div class="ru-live-video">
         <div
-            style="background-image: url('public/images/ru-video-page-bg-landscape.png');"
-            class="page-bg-image"
+            style="background-image: url('public/images/ru-bg-landscape-lqip.png');"
+            class="page-bg-image lazyload"
+            data-bgset="
+                public/images/ru-bg-portrait-small.png [(max-width: 480px)] |
+                public/images/ru-bg-portrait.png [(max-width: 767px)] |
+                public/images/ru-bg-landscape-small.png [(max-width: 1023px)] |
+                public/images/ru-bg-landscape.png
+            "
         ></div>
 
         <div class="page-bg-overlay"></div>
@@ -64,7 +81,8 @@
                     <div class="video-wrapper">
                         <div class="video-container">
                             <iframe
-                                src="https://www.youtube.com/embed/videoseries?list=PL7cpdOw8ERGCIBtwGB1d7fp2aunrPOrrQ"
+                                class="lazyload"
+                                data-src="https://www.youtube.com/embed/videoseries?list=PL7cpdOw8ERGCIBtwGB1d7fp2aunrPOrrQ"
                                 frameborder="0"
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen
@@ -74,7 +92,11 @@
 
                     <div class="body">
                         <div class="ru-logo-wrapper">
-                            <img src="public/images/ru-logo-lockup-with-date.png" />
+                            <img
+                                class="lazyload"
+                                src="public/images/ru-logo-lockup-with-date-lqip.png"
+                                data-src="public/images/ru-logo-lockup-with-date.png"
+                            />
                         </div>
                         <div class="description">
                             <p>
@@ -83,7 +105,11 @@
                             </p>
                         </div>
                         <div class="partners">
-                            <img src="public/images/jameson-connects.png" />
+                            <img
+                                class="lazyload"
+                                src="public/images/jameson-connects-lqip.png"
+                                data-src="public/images/jameson-connects.png"
+                            />
                         </div>
                     </div>
                 </div>

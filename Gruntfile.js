@@ -60,8 +60,8 @@ module.exports = function (grunt) {
                     presets: ['es2015'],
                 },
                 files: {
-                    // "client.js": "public/js/prod.js"
-                    "public/js/prod.js": "client.js",
+                    "client.js": "public/js/prod.js",
+                    // "public/js/prod.js": "client.js",
                 },
             },
         },

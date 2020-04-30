@@ -1,1 +1,0 @@
-{"version":3,"sources":["public/js/prod.js"],"names":["console","log"],"mappings":"AAAA;;AAEAA,QAAQC,GAAR,CAAY,WAAZ;AACA","file":"client.js","sourcesContent":["'use strict';\n\nconsole.log('client js');\n//# sourceMappingURL=prod.js.map\n"]}

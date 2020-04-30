@@ -46,7 +46,7 @@ p {
     position: relative;
     z-index: 2; }
   .ru-live-video .wrapper {
-    padding: 32px 0;
+    padding: 16px 0 32px;
     width: 100%; }
   .ru-live-video .container {
     padding: 0 16px; }
@@ -88,10 +88,10 @@ p {
       width: 100%; }
   @media only screen and (min-width: 768px) {
     .ru-live-video .wrapper {
-      padding: 75px 0 104px;
+      padding: 32px 0 104px;
       width: 100%; }
     .ru-live-video .container {
-      padding: 0 92px; }
+      padding: 0 32px; }
     .ru-live-video .video-wrapper {
       margin: auto;
       max-width: 100%; }
@@ -99,8 +99,5 @@ p {
       max-width: 200px; }
     .ru-live-video .description {
       margin-bottom: 24px; } }
-  @media only screen and (min-width: 1440px) {
-    .ru-live-video .video-wrapper {
-      max-width: 1100px; } }
 
 /*# sourceMappingURL=style.css.map */

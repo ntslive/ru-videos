@@ -21,37 +21,32 @@ p {
   line-height: 18px;
   text-transform: uppercase; }
 
-.ru-live-video .page-bg-image {
-  bottom: 0;
-  height: 100%;
-  left: 0;
-  position: fixed;
-  right: 0;
-  top: 0;
-  width: 100%;
+.ru-live-video .main {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  z-index: 0; }
-.ru-live-video .page-bg-overlay {
-  bottom: 0;
-  height: 100%;
-  left: 0;
-  position: fixed;
-  right: 0;
-  top: 0;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
-  z-index: 1; }
-.ru-live-video .main {
   align-items: center;
   display: flex;
   justify-content: center;
+  min-height: 100vh;
   position: relative;
-  z-index: 2; }
+  z-index: 0; }
+  .ru-live-video .main::before {
+    background-color: rgba(0, 0, 0, 0.4);
+    bottom: 0;
+    content: '';
+    left: 0;
+    min-height: 100vh;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 1; }
 .ru-live-video .wrapper {
   padding: 32px 0;
-  width: 100%; }
+  position: relative;
+  width: 100%;
+  z-index: 2; }
 .ru-live-video .container {
   padding: 0 16px; }
 .ru-live-video .video-container {

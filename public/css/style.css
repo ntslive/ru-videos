@@ -99,5 +99,8 @@ p {
       max-width: 200px; }
     .ru-live-video .description {
       margin-bottom: 24px; } }
+  @media only screen and (min-width: 1280px) {
+    .ru-live-video .video-wrapper {
+      max-width: 90%; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -23,5 +23,8 @@
     "grunt-babel": "^7.0.0",
     "grunt-contrib-sass": "^1.0.0",
     "grunt-contrib-watch": "^1.1.0"
+  },
+  "dependencies": {
+    "lazysizes": "^5.2.0"
   }
 }

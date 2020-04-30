@@ -44,27 +44,6 @@ module.exports = function (grunt) {
                 }
             }
         },
-
-        /**
-         * Converts all ES6 Javascript into ES5 Javascript.
-         *
-         * .babelrc full configures Babel.
-         */
-        babel: {
-            /**
-             * Transform ES6 JS files into ES5.
-             */
-            es6: {
-                options: {
-                    sourceMap: true,
-                    presets: ['es2015'],
-                },
-                files: {
-                    "client.js": "public/js/prod.js",
-                    // "public/js/prod.js": "client.js",
-                },
-            },
-        },
     });
 
     grunt.loadNpmTasks('grunt-contrib-sass');
@@ -72,5 +51,5 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-babel');
 
     grunt.registerTask('development', ['sass:compile', 'watch']);
-    grunt.registerTask('production',  ['sass:compile', 'babel:es6']);
+    grunt.registerTask('production',  ['sass:compile']);
 };

@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-    "dev": "grunt development",
-    "build": "grunt production",
+    "development": "grunt development",
+    "production": "grunt production",
     "test": "echo \\\"Error: no test specified\\\" && exit 1"
   },
   "repository": {
@@ -24,7 +24,8 @@
     "grunt": "^1.1.0",
     "grunt-babel": "^7.0.0",
     "grunt-contrib-sass": "^1.0.0",
-    "grunt-contrib-watch": "^1.1.0"
+    "grunt-contrib-watch": "^1.1.0",
+    "sass": "^1.26.5"
   },
   "dependencies": {
     "lazysizes": "^5.2.0"

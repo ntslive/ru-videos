@@ -1,4 +1,4 @@
 #!/bin/sh
 #
-grunt production
+npm run production
 git add public/.

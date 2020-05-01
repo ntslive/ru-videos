@@ -15,7 +15,7 @@ module.exports = function (grunt) {
         sass: {
             compile: {
                 options: {
-                    style: 'nested'
+                    style: 'compressed'
                 },
                 files: {
                     'public/css/style.css': 'style.scss'

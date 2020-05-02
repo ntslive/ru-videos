@@ -36,7 +36,13 @@ p {
     line-height: 18px;
     text-transform: uppercase;
 }
-
+a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+    &:hover {
+      color: rgb(211,211,211);
+  }
+}
 .ru-live-video {
     @include bg-cover;
     min-height: 100vh;
